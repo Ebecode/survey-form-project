@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vegetable Survey Form</title>
+</head>
+<body>
+	<main>
+		<h1 id="title">Customer Survey Form</h1>
+		<p id="description">Please fill the following form to help us provide better service:</p>
+		<form id="survey-form">
+			<section>
+				<h2>Customer Information</h2>
+
+				<label id="name-label" for="name">Name *</label>
+				<input id="name" type="text" name="name" required="required" placeholder="Your name">
+
+				<label id="email-label" for="email">Email *</label>
+				<input id="email" type="email" name="email" required="required" placeholder="Your email address">
+
+				<label id="number-label" for="number">Age *</label>
+				<input id="number" type="number" name="number" min="1" max="120" step="1" placeholder="Age">
+
+				<p>What type of customer are you?</p>
+				<select id="dropdown">
+					<option value="grocery shopper" selected>Grocery Shopper</option>
+					<option value="gardener">Gardener</option>
+					<option value="grocer">Grocer</option>
+					<option value="restaurant">Restaurant</option>
+					<option value="farmer">Farmer</option>
+					<option value="other">Other</option>
+				</select>
+				
+			</section>
+
+
+			<section>
+				<h2>Customer preferences</h2>
+
+				<p>How do you prefer your vegetables to be sourced?</p>
+				<fieldset>
+					<legend>Please select one of the options below:</legend>
+					<label><input type="radio" name="veg-source" value="organic">Organic</label>
+					<label><input type="radio" name="veg-source" value="non-gmo">Non-GMO</label>
+					<label><input type="radio" name="veg-source" value="hybrid">Hybrid</label>
+					<label><input type="radio" name="veg-source" value="gen-eng">Genetically Engineered</label>
+				</fieldset>
+
+				<p>What do you mostly order?</p>
+				<fieldset>
+					<legend>Select all that apply:</legend>
+					<label><input type="checkbox" name="veg-purchase" value="seed">Seeds</label>
+					<label><input type="checkbox" name="veg-purchase" value="seedling">Seedlings</label>
+					<label><input type="checkbox" name="veg-purchase" value="cutting">Cuttings</label>
+					<label><input type="checkbox" name="veg-purchase" value="pot-plant">Potted plants</label>
+					<label><input type="checkbox" name="veg-purchase" value="sprout">Sprouts</label>
+					<label><input type="checkbox" name="veg-purchase" value="whole">Whole fresh vegetables</label>
+					<label><input type="checkbox" name="veg-purchase" value="chopped">Chopped vegetables</label>
+					<label><input type="checkbox" name="veg-purchase" value="frozen">Frozen vegetables</label>
+					<label><input type="checkbox" name="veg-purchase" value="dehydrated">Dehydrated vegetables</label>
+				</fieldset>
+
+			</section>
+
+			<section>
+				<h2>Customer Satisfaction</h2>
+			</section>
+			<section>
+				<p>Any comments or suggestions? Please let us know below:</p>
+				<textarea placeholder="Enter comments here"></textarea>
+			</section>
+
+			<button id="submit">Submit</button>
+		</form>
+		
+	</main>
+
+	<script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+</body>
+</html>
