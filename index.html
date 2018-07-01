@@ -15,99 +15,95 @@
 		<form id="survey-form">
 			<section class="customer-info">
 				<h2>Customer Information</h2>
-				<div class="controls">
-					<div class="data-input">
-						<label id="name-label" for="name">Name *</label>
-						<input id="name" type="text" name="name" required="required" placeholder="Your name">
-					</div>
-					<div class="data-input">
-						<label id="email-label" for="email">Email *</label>
-						<input id="email" type="email" name="email" required="required" placeholder="Your email address">
-					</div>
-					<div class="data-input">
-						<label id="number-label" for="number">Age *</label>
-						<input id="number" type="number" name="number" min="1" max="120" step="1" placeholder="Age">
-					</div>
-					<div class="data-input">
-						<label>What type of customer are you?</label>
-						<select id="dropdown">
-							<option value="grocery shopper" selected>Grocery Shopper</option>
-							<option value="gardener">Gardener</option>
-							<option value="grocer">Grocer</option>
-							<option value="restaurant">Restaurant</option>
-							<option value="farmer">Farmer</option>
-							<option value="other">Other</option>
-						</select>
-					</div>
+			
+				<div class="data-input">
+					<label id="name-label" for="name">Name *</label>
+					<input id="name" type="text" name="name" required="required" placeholder="Your name">
+				</div>
+				<div class="data-input">
+					<label id="email-label" for="email">Email *</label>
+					<input id="email" type="email" name="email" required="required" placeholder="Your email address">
+				</div>
+				<div class="data-input">
+					<label id="number-label" for="number">Age *</label>
+					<input id="number" type="number" name="number" min="1" max="120" step="1" placeholder="Age">
+				</div>
+				<div class="data-input">
+					<label>Customer type</label>
+					<select id="dropdown">
+						<option value="grocery shopper" selected>Grocery Shopper</option>
+						<option value="gardener">Gardener</option>
+						<option value="grocer">Grocer</option>
+						<option value="restaurant">Restaurant</option>
+						<option value="farmer">Farmer</option>
+						<option value="other">Other</option>
+					</select>
+				</div>	
 					
-				</div>			
 			</section>
 
 
 			<section class="preferences">
 				<h2>Customer preferences</h2>
-
-				<p>How do you prefer your vegetables to be sourced?</p>
-				<fieldset>
-					<legend>Please select one of the options below:</legend>
-					<label><input type="radio" name="veg-source" value="organic">Organic</label>
-					<label><input type="radio" name="veg-source" value="non-gmo">Non-GMO</label>
-					<label><input type="radio" name="veg-source" value="hybrid">Hybrid</label>
-					<label><input type="radio" name="veg-source" value="gen-eng">Genetically Engineered</label>
-				</fieldset>
-
-				<p>What do you mostly order?</p>
-				<fieldset>
-					<legend>Select all that apply:</legend>
-					<label><input type="checkbox" name="veg-purchase" value="seed">Seeds</label>
-					<label><input type="checkbox" name="veg-purchase" value="seedling">Seedlings</label>
-					<label><input type="checkbox" name="veg-purchase" value="cutting">Cuttings</label>
-					<label><input type="checkbox" name="veg-purchase" value="pot-plant">Potted plants</label>
-					<label><input type="checkbox" name="veg-purchase" value="sprout">Sprouts</label>
-					<label><input type="checkbox" name="veg-purchase" value="whole">Whole fresh vegetables</label>
-					<label><input type="checkbox" name="veg-purchase" value="chopped">Chopped vegetables</label>
-					<label><input type="checkbox" name="veg-purchase" value="frozen">Frozen vegetables</label>
-					<label><input type="checkbox" name="veg-purchase" value="dehydrated">Dehydrated vegetables</label>
-				</fieldset>
-
+				<div class="box">
+					<div class="options">
+						<p>How do you prefer your vegetables?</p>
+						<label><input type="radio" name="veg-source" value="organic">Organic</label><br>
+						<label><input type="radio" name="veg-source" value="non-gmo">Non-GMO</label><br>
+						<label><input type="radio" name="veg-source" value="hybrid">Hybrid</label><br>
+						<label><input type="radio" name="veg-source" value="gen-eng">Genetically Engineered</label>
+					</div>
+					<div class="options">
+						<p>What do you mostly order?</p>
+						<label><input type="checkbox" name="veg-purchase" value="seed">Seeds</label><br>
+						<label><input type="checkbox" name="veg-purchase" value="seedling">Seedlings</label><br>
+						<label><input type="checkbox" name="veg-purchase" value="cutting">Cuttings</label><br>
+						<label><input type="checkbox" name="veg-purchase" value="pot-plant">Potted plants</label><br>
+						<label><input type="checkbox" name="veg-purchase" value="sprout">Sprouts</label><br>
+						<label><input type="checkbox" name="veg-purchase" value="whole">Whole fresh vegetables</label><br>
+						<label><input type="checkbox" name="veg-purchase" value="chopped">Chopped vegetables</label><br>
+						<label><input type="checkbox" name="veg-purchase" value="frozen">Frozen vegetables</label><br>
+						<label><input type="checkbox" name="veg-purchase" value="dehydrated">Dehydrated vegetables</label>
+					</div>
+				</div>
 			</section>
 
 			<section class="satisfaction">
 				<h2>Customer Satisfaction</h2>
-
-				<p>How do you consider the quality of our services?</p>
-				<fieldset>
-					<legend>Please select one of the following options</legend>
-
-					<label><input type="radio" name="service-quality" value="excellent">Excellent</label>
-					<label><input type="radio" name="service-quality" value="very-good">Very good</label>
-					<label><input type="radio" name="service-quality" value="good">Good</label>
-					<label><input type="radio" name="service-quality" value="average">Average</label>
-					<label><input type="radio" name="service-quality" value="below-average">Below average</label>
-					<label><input type="radio" name="service-quality" value="bad">Bad</label>
-					<label><input type="radio" name="service-quality" value="very-bad">Very bad</label>
-				</fieldset>
-
-				<p>In what area of service may we improve?</p>
-				<fieldset>
-					<legend>Select all that apply</legend>
-					<label><input type="checkbox" name="improve" value="freshness">Produce freshness</label>
-					<label><input type="checkbox" name="improve" value="service">Customer service</label>
-					<label><input type="checkbox" name="improve" value="packaging">Packaging</label>
-					<label><input type="checkbox" name="improve" value="shipping">Shipping</label>
-					<label><input type="checkbox" name="improve" value="plants">Plants, seeds or cuttings</label>
-					<label><input type="checkbox" name="improve" value="purchase-ease">Ease of purchase</label>
-					<label><input type="checkbox" name="improve" value="information">Product information</label>
-					<label><input type="checkbox" name="improve" value="variety">Product selection variety</label>
-					
-				</fieldset>
+				<div class="box">
+					<div class="options">
+						<p>How is our quality?</p>
+						<label><input type="radio" name="service-quality" value="excellent">Excellent</label><br>
+						<label><input type="radio" name="service-quality" value="very-good">Very good</label><br>
+						<label><input type="radio" name="service-quality" value="good">Good</label><br>
+						<label><input type="radio" name="service-quality" value="average">Average</label><br>
+						<label><input type="radio" name="service-quality" value="below-average">Below average</label><br>
+						<label><input type="radio" name="service-quality" value="bad">Bad</label><br>
+						<label><input type="radio" name="service-quality" value="very-bad">Very bad</label>
+					</div>
+					<div class="options">
+						<p>Where can we improve?</p>
+						<label><input type="checkbox" name="improve" value="freshness">Produce freshness</label><br>
+						<label><input type="checkbox" name="improve" value="service">Customer service</label><br>
+						<label><input type="checkbox" name="improve" value="packaging">Packaging</label><br>
+						<label><input type="checkbox" name="improve" value="shipping">Shipping</label><br>
+						<label><input type="checkbox" name="improve" value="plants">Plants, seeds or cuttings</label><br>
+						<label><input type="checkbox" name="improve" value="purchase-ease">Ease of purchase</label><br>
+						<label><input type="checkbox" name="improve" value="information">Product information</label><br>
+						<label><input type="checkbox" name="improve" value="variety">Product selection variety</label>
+					</div>
+				</div>
 			</section>
-			<section>
+			<section class="comments">
 				<p>Any additional comments or suggestions? Please let us know below:</p>
-				<textarea placeholder="Enter comments here"></textarea>
+				<div class="box">
+					<textarea placeholder="Enter comments here"></textarea>
+					<button id="submit">Submit Form</button>
+				</div>
+				
 			</section>
 
-			<button id="submit">Submit</button>
+			
 		</form>
 		
 	</main>

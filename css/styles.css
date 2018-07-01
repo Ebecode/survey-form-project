@@ -1,3 +1,6 @@
+
+
+/*Global selectors*/
 body, html {
 	margin: 0px;
 	padding: 0px;
@@ -28,15 +31,32 @@ header {
 	text-align: center;
 }
 
-/*Input selection*/
 section label {
 	margin: 0px 10px;
 }
 
 section h2 {
 	text-align: left;
+	margin-bottom: 5px;
+	margin-top: 30px;
+	font-weight: 500;
 }
 
+button {
+	max-width: 50%;
+	min-height: 40px;
+	font-size: 1em;
+	font-weight: 300;
+	color: #fff;
+	background-color: rgba(81, 211, 81, 0.9);
+	border-radius: 5px;
+	border: none;	
+}
+button:hover {
+	background-color: rgba(255, 153, 0, 0.9);
+}
+
+/*Customer information selectors*/
 .customer-info {
 	text-align: center;
 }
@@ -44,9 +64,38 @@ section h2 {
 	min-width: 30%;
 }
 
-.customer-info input {
+.customer-info input, .customer-info select, textarea {
+	border: 2px solid #999999;
 	border-radius: 5px;
 	padding: 2px 10px 2px 10px;
 	font-size: 20px;
+	margin-bottom: 10px;
+	box-shadow: 0px 0px transparent;
 }
 
+.customer-info input:focus, .customer-info select:focus {
+	outline-color: transparent;
+	border-color: rgba(255, 153, 0, 0.9);
+}
+
+/*Customer preferences selectors*/
+.box {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+}
+
+/*Comments selectors*/
+.comments {
+	margin-top: 3em;
+}
+.comments textarea {
+	min-width: 50%;
+	min-height: 90%;
+	display: block;
+
+}
+.comments textarea:focus-within {
+	outline-color: transparent;
+	border-color: rgba(255, 153, 0, 0.9);
+}
