@@ -24,7 +24,10 @@ main {
 	margin: auto;
 	padding: 2em;
 	background-color: #fff;
-	font-family: sans-serif;
+	font-family: 'Exo 2', sans-serif;
+}
+h1 {
+	font-family: 'Fira Sans', sans-serif;
 }
 
 header {
@@ -44,16 +47,19 @@ section h2 {
 
 button {
 	max-width: 50%;
-	min-height: 40px;
+	height: 40px;
 	font-size: 1em;
 	font-weight: 300;
 	color: #fff;
 	background-color: rgba(81, 211, 81, 0.9);
 	border-radius: 5px;
-	border: none;	
+	border: none;
+	font-weight: normal;
 }
 button:hover {
 	background-color: rgba(255, 153, 0, 0.9);
+	font-weight: bold;
+	height: 40px;
 }
 
 /*Customer information selectors*/
@@ -91,11 +97,34 @@ button:hover {
 }
 .comments textarea {
 	min-width: 50%;
-	min-height: 90%;
+	min-height: 100px;
 	display: block;
 
 }
 .comments textarea:focus-within {
 	outline-color: transparent;
 	border-color: rgba(255, 153, 0, 0.9);
+}
+
+/*Media query*/
+@media(max-width: 760px) {
+	h1, h2 {
+		text-align: center;
+	}
+
+	.box {
+		grid-template-columns: 1fr;
+	}
+
+	.comments textarea {
+		width: 90%;
+	}
+
+	button {
+		min-width: 95%;
+		margin: auto;
+	}
+	main {
+		max-width: 70vw;
+	}
 }
